@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="flex column align_center">
+
+    <!-- HEADER -->
+
+    <header class="flex column align_center w_100">
+        <div class="flex justify_end w_100">
+            <button class="burger m_05 radius_3">&#9776;</button>
+            <div class="display_none" id="menu_burger">
+                <p class="toggle_menu">Louer une voiture</p>
+                <p class="toggle_menu">Louer un utilitaire</p>
+                <p class="toggle_menu">Réserver un chauffer</p>
+                <p class="toggle_menu">Découvrez nos agences</p>
+                <p class="toggle_menu">Mon Compte</p>
+                <p class="toggle_menu">Contact</p>
+            </div>
+        </div>
+
+        <div class="menu_reservation flex column justify_between h_100">
+            <div class="flex column align_center">
+                <h2 class="c_white">Bienvenue à bord</h2>
+                <p class="c_white">Location de voiture 24h/24 et 7j/7</p>
+            </div>
+
+        <!-- Barre de recherche -->
+            <div class="menu_recherche flex m_2">
+
+                <div class="menu_recherche_div">
+                    <select id="adresse" name="adresse" size="1" class="border_none p_02 m_02 radius_3 opacity_100">
+                        <option value="fr" >Adresse de départ</option> 
+
+                    <input type="date" id="debut_location" name="debut_location"
+                    placeholder="Début de location" class="border_none p_02 m_lr_2 radius_3 opacity_100">
+
+                    <input type="date" id="fin_location" name="fin_location"
+                    placeholder="Fin de location" value="Fin de location" class="border_none p_02 m_r_2 radius_3 opacity_100">
+                </div> 
+
+                <input type="submit" id="bouton_valider" name="valider" value="Valider ma recherche" aria-label="valider" class="c_white p_05 font_08">
+            </div> 
+        </div>  
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="w_60">
+        <!-- résultats recherche -->
+        <div class="results_prix flex justify_between m_2">
+            <h3>7 résultats</h3>
+            <select id="prix" name="prix" size="1" class="radius_3 p_02"> 
+                <option value="fra" >Prix croissant</option>
+            </select>
+
+        </div>
+
+        <!-- Véhicules -->
+
+        <div class="voitures flex justify_center align_center m_tb_1">
+            <p><i class="arrow left btn" id="btn_left"></i></p>
+            <div class="">
+                <div class="">
+                  <img src="./img/1.png" alt="" id="img_carousel">                  
+                </div>              
+            </div>
+
+            <p><i class="arrow right btn" id="btn_right"></i></p>
+            <div class="m_l_2">
+                <h3>Peugeot 208</h3>
+                <p class="m_tb_1">Diesel 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire), 999 € - Agence de Paris</p>
+                <button class="reserver border_none c_white p_05 radius_3">Réserver et payer</button>
+            </div>
+        </div>
+
+        <div class="voitures flex justify_center align_center m_tb_1">
+            <p><i class="arrow left btn" id="btn_left2"></i></p>
+            <div class="">
+                <div class="">
+                  <img src="./img/2.png" alt="" id="img_carousel2">                  
+                </div>               
+            </div>
+
+            <p><i class="arrow right btn" id="btn_right2"></i></p>
+            <div class="m_l_2">
+                <h3>Ford Focus</h3>
+                <p class="m_tb_1">Diesel 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire), 999 € - Agence de Paris</p>
+                <button class="reserver border_none c_white p_05 radius_3">Réserver et payer</button>
+            </div>
+        </div>
+
+        <div class="voitures flex justify_center align_center m_tb_1">
+            <p><i class="arrow left btn" id="btn_left3"></i></p>
+            <div class="">
+                <div class="">
+                  <img src="./img/3.png" alt="" id="img_carousel3">                  
+                </div>               
+            </div>
+
+            <p><i class="arrow right btn" id="btn_right3"></i></p>
+            <div class="m_l_2">
+                <h3>Audi A1</h3>
+                <p class="m_tb_1">Diesel 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire), 999 € - Agence de Paris</p>
+                <button class="reserver border_none c_white p_05 radius_3">Réserver et payer</button>
+            </div>
+        </div>
+
+        <div class="voitures flex justify_center align_center m_tb_1">
+            <p><i class="arrow left btn" id="btn_left4"></i></p>
+            <div class="">
+                <div class="">
+                  <img src="./img/4.png" alt="" id="img_carousel4">                  
+                </div>    
+            </div>
+
+            <p><i class="arrow right btn" id="btn_right4"></i></p>
+            <div class="m_l_2">
+                <h3>Opel Mokka</h3>
+                <p class="m_tb_1">Diesel 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire), 999 € - Agence de Paris</p>
+                <button class="reserver border_none c_white p_05 radius_3">Réserver et payer</button>
+            </div>
+        </div>
+    
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="w_60 flex justify_center align_center m_2">
+        <img src="./img/agence.jpg" alt="" id="img_agence" class=" m_r_2">
+        <div class="flex column justify_between h_100">
+            <p>Notre Agence de <b>Paris</b> </p>
+            <p>300 boulevard de vaugirard, 75015, Paris</p>
+            <p>Ouvert 7j/4 de 09h à 13h et de 14h à 20h</p>
+            <p>01 49 78 21 33</p>
+            <p>contact@vtc.com</p>
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="./scripts/app.js"></script>
+</html>

@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* FLEX CLASS */
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.justify_center{
+    justify-content: center;
+}
+
+.flex_end{
+    flex-direction: flex-end;
+}
+
+.justify_end{
+    justify-content: flex-end;
+}
+
+.align_center{
+    align-items: center;
+}
+
+.justify_between{
+    justify-content: space-between;
+}
+
+/* WIDTH HEIGHT CLASS */
+.w_100{
+    width: 100%;
+}
+
+.w_80{
+    width: 80%;
+}
+
+.w_60{
+    width: 60%;
+}
+
+.h_100{
+    height: 100%;
+}
+
+/* COLOR OPACITY CLASS */
+.c_white{
+    color: white;
+}
+
+.opacity_100{
+    opacity: 1;
+}
+
+/* MARGIN PADDING CLASS */
+.m_02{
+    margin: 0.2rem;
+}
+
+.m_05{
+    margin: 0.5rem;
+}
+
+.m_1{
+    margin: 1rem;
+}
+
+.m_2{
+    margin: 2rem;
+}
+
+.m_tb_1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.m_lr_2{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.m_r_2{
+    margin-right: 2rem;
+}
+
+.m_l_2{
+    margin-left: 2rem;
+}
+
+.p_02{
+    padding: 0.2rem;
+}
+
+.p_05{
+    padding: 0.5rem;
+}
+
+/* Style */
+
+.border_none{
+    border: none;
+}
+
+.font_08{
+    font-size: 0.8rem;
+}
+
+.radius_3{
+    border-radius: 3px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+
+/* Display */
+
+.display_none{
+    display: none;
+}
+
+.display_block{
+    display: block;
+}
+
+/* Header */
+
+
+header{
+    background-image : url("../img/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 55vh;
+    width: 100%;   
+}
+
+.burger{
+    background: none;
+    color:gray;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid gray;
+    padding : 1px 8px 5px 8px;
+}
+
+#bouton_valider{
+    background: lightgreen;
+    
+    border: none;
+}
+
+.menu_recherche{
+    background: lightgray;
+    opacity: 0.8;
+}
+
+
+#menu_burger{
+width: 100%;
+position : absolute;
+top:5%;
+}
+
+.toggle_menu{
+width: 100%;
+background: white;
+font-size: 1rem;
+padding: 0.5rem;
+}
+
+/* MAIN */
+#prix{
+    background : linear-gradient(white,lightgray);
+
+}
+
+.reserver{
+    background : linear-gradient(green,lightgreen);
+}
+
+/* FOOTER */
+
+footer{
+    height: 20vh;
+}
+
+#img_agence{
+    height: 100%;
+}
+
+/* Responsive Tablette */
+
+@media screen and (max-width: 1024px){
+    header{
+        height:70vh;
+        background-size: 200% 100% !important;
+    }
+    
+    main{
+    width: 90% !important;
+    padding: 1rem;
+    }
+    
+    .menu_recherche{
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    
+    .menu_recherche_div{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .menu_reservation{
+        width: 100%;
+    }
+    
+    .menu_reservation .menu_recherche select, .menu_reservation .menu_recherche div input {
+        width: 32%;
+        margin:0.3rem;
+    }
+    
+    main div div h3, main div div p{
+        display: none;
+    }
+    
+    header div h2{
+        font-size: 3.5rem;
+    }
+    
+    header div p{
+        font-size: 1.2rem;
+    }
+    
+    footer{
+        width: 90% !important;
+    }
+    
+    }
+
+/* Responsive Smartphone */
+
+@media screen and (max-width: 724px){
+
+header{
+    height:70vh;
+    background-size: 200% 100% !important;
+}
+
+main{
+width: 100% !important;
+padding: 1rem;
+}
+
+.menu_recherche{
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.menu_recherche_div{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_reservation{
+    width: 100%;
+}
+
+.menu_reservation .menu_recherche select, .menu_reservation .menu_recherche div input {
+    width: 98% !important;
+    margin:0.2rem;
+}
+
+main div div h3, main div div p{
+    display: none;
+}
+
+header div h2{
+    font-size: 3.5rem;
+}
+
+header div p{
+    font-size: 1.2rem;
+}
+
+footer{
+    width: 90% !important;
+}
+
+}
+
+
+
